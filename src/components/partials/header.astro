@@ -1,0 +1,96 @@
+---
+const links = [
+  { id: 0, name: "Home", url: "/" },
+  { id: 1, name: "About", url: "/about" },
+  { id: 2, name: "Services", url: "/services" },
+  { id: 3, name: "Portfolio", url: "/portfolio" },
+  { id: 4, name: "Latest News", url: "/posts" },
+  { id: 5, name: "Contact", url: "/contact" },
+];
+---
+
+<header class="s-header">
+  <div class="header-logo">
+    <!-- <a class="site-logo" href="index.html">
+      <img src="images/logo.png" alt="Homepage" />
+    </a> -->
+    <h1 class="text-white text-5xl">
+      <a style="width:280px" href="/"> Blooming Brands</a>
+    </h1>
+  </div>
+
+  <nav class="header-nav">
+    <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+    <div class="header-nav__content">
+      <h3>Blooming Brands</h3>
+
+      <ul class="header-nav__list">
+        <li class="current">
+          <a class="smoothscroll" href="/" title="home">Home</a>
+        </li>
+        <li><a class="smoothscroll" href="/about" title="about">About</a></li>
+        <li>
+          <a class="smoothscroll" href="/services" title="services">Services</a>
+        </li>
+        <li>
+          <a class="smoothscroll" href="/portfolio" title="works">Portfolio</a>
+        </li>
+        <li>
+          <a class="smoothscroll" href="/posts" title="clients">Latest News</a>
+        </li>
+        <li>
+          <a class="smoothscroll" href="/contact" title="contact">Contact</a>
+        </li>
+      </ul>
+
+      <p class="text-white">
+        Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href="#0"
+          >voluptatem</a
+        > porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque
+        reprehenderit.
+      </p>
+
+      <ul class="header-nav__social">
+        <li>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <!-- <li>
+          <a href="#"><i class="fa fa-"></i></a>
+        </li> -->
+      </ul>
+    </div>
+    <!-- end header-nav__content -->
+  </nav>
+  <!-- end header-nav -->
+
+  <a class="header-menu-toggle lg:hidden xl:hidden" href="#0">
+    <!-- <span class="header-menu-text">Menu</span> -->
+    <span class="header-menu-icon"></span>
+  </a>
+  <div class="desktopMenu">
+    <ul
+      class="flex flex-row justify-end h-[10vh] items-center px-10 text-white text-3xl font-black"
+    >
+      {
+        links.map((link) => (
+          <li class="mr-4">
+            <a href={link.url}>{link.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <!-- end s-header -->
+
+  <style></style>
+</header>

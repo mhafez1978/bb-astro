@@ -1,0 +1,32 @@
+---
+const { pageHeading, pageURL } = Astro.props;
+---
+
+<section
+  id="about"
+  class="s-aboutPage h-[100vh] flex flex-col justify-center items-center"
+>
+  <div class="row section-header has-bottom-sep" data-aos="fade-up">
+    <div class="col-full">
+      <h3 class="text-white">
+        You're here:
+        <a href="/">Home</a> >
+        <a href={pageURL}>{pageHeading}</a>
+      </h3>
+      <h1 class="display-1 display-1--light">{pageHeading}</h1>
+    </div>
+  </div>
+  <!-- end section-header -->
+
+  <div class="row about-desc" data-aos="fade-up">
+    <div class="col-full">
+      <p>
+        We are a group of professional local creators, designers, developers,
+        and marketing experts. Our mission is to empower small business with
+        cutting edge technology and big data to help them grow.
+      </p>
+    </div>
+  </div>
+  <!-- end about-desc -->
+</section>
+<!-- end s-about -->

@@ -1,0 +1,52 @@
+---
+interface Props {
+  pageTitle: string;
+  pageDescription?: string;
+  pageKeywords?: string;
+}
+
+const { pageTitle, pageDescription, pageKeywords } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <!--- basic page needs
+    ================================================== -->
+    <title>BB | {pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="keywords" content={pageKeywords} />
+    <meta name="author" content="" />
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../../public/css/base.css" />
+    <link rel="stylesheet" href="../../public/css/vendor.css" />
+    <link rel="stylesheet" href="../../public/css/main.css" />
+
+    <!-- script
+    ================================================== -->
+    <script src="../../public/js/modernizr.js"></script>
+    <script src="../../public/js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link
+      rel="shortcut icon"
+      href="../../public/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../../public/favicon.ico" type="image/x-icon" />
+  </head>
+  <body id="top">
+    <slot />
+    <script src="../../public/js/jquery-3.2.1.min.js" is:inline></script>
+    <script src="../../public/js/plugins.js" is:inline></script>
+    <script src="../../public/js/main.js" is:inline></script>
+  </body>
+</html>

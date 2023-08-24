@@ -1,0 +1,14 @@
+---
+import HomePageLayout from "../layout.astro";
+import Header from "../../components/partials/header.astro";
+import PageHeader from "../../components/partials/pageHeader.astro";
+---
+
+<HomePageLayout
+  pageTitle="Portfolio"
+  pageDescription="This is the Portfolio page"
+  pageKeywords="Blooming Brands, About"
+>
+  <Header />
+  <PageHeader pageHeading="Recent Projects" pageURL="/portfolio" />
+</HomePageLayout>
