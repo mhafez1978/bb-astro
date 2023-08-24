@@ -19,28 +19,28 @@ const { pageTitle, pageDescription, pageKeywords } = Astro.props;
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="../../public/css/base.css" />
-    <link rel="stylesheet" href="../../public/css/vendor.css" />
-    <link rel="stylesheet" href="../../public/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/vendor.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
 
     <!-- script
     ================================================== -->
-    <script src="../../public/js/modernizr.js"></script>
-    <script src="../../public/js/pace.min.js"></script>
+    <script src="../assets/js/modernizr.js"></script>
+    <script src="../assets/js/pace.min.js"></script>
 
     <!-- favicons
     ================================================== -->
     <link
       rel="shortcut icon"
-      href="../../public/favicon.ico"
+      href="../assets/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="icon" href="../../public/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
   </head>
   <body id="top">
     <slot />
-    <script src="../../public/js/jquery-3.2.1.min.js" is:inline></script>
-    <script src="../../public/js/plugins.js" is:inline></script>
-    <script src="../../public/js/main.js" is:inline></script>
+    <script src="../assets/js/jquery-3.2.1.min.js" is:inline></script>
+    <script src="../assets/js/plugins.js" is:inline></script>
+    <script src="../assets/js/main.js" is:inline></script>
   </body>
 </html>
