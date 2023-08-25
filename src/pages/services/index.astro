@@ -2,6 +2,7 @@
 import HomePageLayout from "../layout.astro";
 import Header from "../../components/partials/header.astro";
 import PageHeader from "../../components/partials/pageHeader.astro";
+import Preloader from "../../components/preloader.astro";
 ---
 
 <HomePageLayout
@@ -11,4 +12,5 @@ import PageHeader from "../../components/partials/pageHeader.astro";
 >
   <Header />
   <PageHeader pageHeading="Our Services" pageURL="/services" />
+  <Preloader />
 </HomePageLayout>

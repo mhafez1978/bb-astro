@@ -1,0 +1,16 @@
+---
+import HomePageLayout from "../layout.astro";
+import Header from "../../components/partials/header.astro";
+import PageHeader from "../../components/partials/pageHeader.astro";
+import Preloader from "../../components/preloader.astro";
+---
+
+<HomePageLayout
+  pageTitle="Latest News"
+  pageDescription="This is the Posts page"
+  pageKeywords="Blooming Brands, Latest News"
+>
+  <Header />
+  <PageHeader pageHeading="Latest News" pageURL="/posts" />
+  <Preloader />
+</HomePageLayout>

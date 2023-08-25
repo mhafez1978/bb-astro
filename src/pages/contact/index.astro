@@ -1,0 +1,16 @@
+---
+import HomePageLayout from "../layout.astro";
+import Header from "../../components/partials/header.astro";
+import PageHeader from "../../components/partials/pageHeader.astro";
+import Preloader from "../../components/preloader.astro";
+---
+
+<HomePageLayout
+  pageTitle="Contact"
+  pageDescription="This is the Contact us page"
+  pageKeywords="Blooming Brands, Contact"
+>
+  <Header />
+  <PageHeader pageHeading="Contact us" pageURL="/contact" />
+  <Preloader />
+</HomePageLayout>

@@ -7,6 +7,7 @@ import Services from "../components/partials/services.astro";
 import RecentWorks from "../components/partials/recentWorks.astro";
 import Testimonials from "../components/partials/testimonials.astro";
 import Footer from "../components/partials/footer.astro";
+import Preloader from "../components/preloader.astro";
 ---
 
 <HomePageLayout pageTitle="Homepage">
@@ -17,18 +18,5 @@ import Footer from "../components/partials/footer.astro";
   <RecentWorks />
   <Testimonials />
   <Footer />
-
-  <!-- preloader
-    ================================================== -->
-  <div id="preloader">
-    <div id="loader">
-      <div class="line-scale-pulse-out">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  </div>
+  <Preloader />
 </HomePageLayout>
